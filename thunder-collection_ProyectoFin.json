@@ -1,0 +1,241 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ProyectoFin",
+    "dateExported": "2024-02-23T17:27:50.782Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "62196f7c-b8c8-4f2a-ba34-f7dde4e5abdb",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-02-23T13:41:47.145Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ecec171c-ff9e-475d-ad1c-81926db3b155",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-02-23T13:46:17.879Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b8616b41-bf1d-4c7e-9690-375d443b57bd",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "62196f7c-b8c8-4f2a-ba34-f7dde4e5abdb",
+            "name": "newProduct",
+            "url": "product/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-23T13:42:16.466Z",
+            "modified": "2024-02-23T14:49:10.113Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "nose"
+                    },
+                    {
+                        "name": "description",
+                        "value": "nose"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65d8b04962eb6c3a77c92367"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "price",
+                        "value": "11111110"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "85ae2a95-8868-4206-bffb-efb010ac03e6",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "ecec171c-ff9e-475d-ad1c-81926db3b155",
+            "name": "newCategory",
+            "url": "category/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-23T13:46:29.502Z",
+            "modified": "2024-02-23T14:55:41.538Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "messi"
+                    },
+                    {
+                        "name": "description",
+                        "value": "El mejor"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "387a8cc3-9089-49c0-8b1d-d3e9df12d258",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "62196f7c-b8c8-4f2a-ba34-f7dde4e5abdb",
+            "name": "updateProduct",
+            "url": "product/update/65d8a7e962eb6c3a77c92363",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-23T14:34:47.824Z",
+            "modified": "2024-02-23T14:44:17.063Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "dakooooo"
+                    },
+                    {
+                        "name": "description",
+                        "value": "gaaaaaaay"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65d8a54262eb6c3a77c92360"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "15"
+                    },
+                    {
+                        "name": "price",
+                        "value": "10000"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "720e8609-a5ca-4f76-bd71-66d7276588af",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "62196f7c-b8c8-4f2a-ba34-f7dde4e5abdb",
+            "name": "listProduct",
+            "url": "product/listName",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-23T14:45:32.524Z",
+            "modified": "2024-02-23T14:47:00.785Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "dakooooo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3f3f1403-e2b9-4687-bcbe-cf933969f1f0",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "62196f7c-b8c8-4f2a-ba34-f7dde4e5abdb",
+            "name": "deleteProduct",
+            "url": "product/delete/65d8b06662eb6c3a77c9236a",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-23T14:47:28.103Z",
+            "modified": "2024-02-23T14:49:29.508Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "39b3c388-f66f-42c9-8214-d4c4f24dbc3a",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "ecec171c-ff9e-475d-ad1c-81926db3b155",
+            "name": "updateCategory",
+            "url": "category/update/65d8b1ed62eb6c3a77c9236d",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-23T14:52:30.909Z",
+            "modified": "2024-02-23T14:57:39.695Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "messi"
+                    },
+                    {
+                        "name": "description",
+                        "value": "GOAT"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e98e06b-4ea9-4512-89ab-b911d75533d6",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "ecec171c-ff9e-475d-ad1c-81926db3b155",
+            "name": "listCategory",
+            "url": "category/list",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-23T14:53:24.760Z",
+            "modified": "2024-02-23T14:58:22.099Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "messi"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "13b193a5-e992-4560-8725-dfba7eb8fb5a",
+            "colId": "0264b60c-e3f5-45eb-9541-05a05d5032e4",
+            "containerId": "ecec171c-ff9e-475d-ad1c-81926db3b155",
+            "name": "deleteCategory",
+            "url": "category/delete/65d8b1ed62eb6c3a77c9236d",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-02-23T14:53:34.985Z",
+            "modified": "2024-02-23T14:58:38.734Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}
