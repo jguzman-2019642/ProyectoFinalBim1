@@ -82,3 +82,20 @@ export const update = async (req, res) => {
         return res.status(500).json({ message: 'Error updating user .', err: err });
     }
 }
+
+export const deleteU = async (req, res)=>{
+    try{
+        //Obtener el Id
+        let { id } = req.params
+        //Validar si está logeado y es el mismo X No lo vemos hoy X
+        //Eliminar (deleteOne (solo elimina no devuelve el documento) / findOneAndDelete (Me devuelve el documento eliminado))
+        let deletedUser = await User.findOneAndDelete({_id: id}) 
+        //Verificar que se eliminó
+        if(!deletedUser) return res.status(404).send({message: 'Account not found and not deleted', err: err})
+        //Responder
+        return res.send({message: `Account with username ${deletedUser.username} deleted successfully`}) //status 200
+    }catch(err){
+        console.error(err)
+        return res.status(500).send({message: 'Error deleting account'})
+    }
+}
