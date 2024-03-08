@@ -21,8 +21,9 @@ const userSchema = Schema({
     },
     role :{
         type: String,
-        enum: ['AMDIM','CLIENT']
-    }
+        enum: ['ADMIN','CLIENT'],
+        default: 'ADMIN'
+     }
 },{
     versionKey: false
 })

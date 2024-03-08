@@ -17,7 +17,6 @@ export const register = async(req, res) => {
         let existingUser = await User.findOne({ username: data.username });
         if (existingUser) return res.status(400).send({ message: 'Username is alredy in use' })
         data.password = await encrypt(data.password)
-        data.role = 'CLIENT'
         let user = new User(data)
         await user.save()
         return res.send({ message: `Registered successfully, can be logged with username ${user.username}` })  
@@ -41,8 +40,8 @@ export const login = async (req, res) => {
                 uid: users.id,
                 username: users.username,
                 email: users.email,
-                name: users.name,
-                role: users.role
+                name: users.name
+                
             }
             let token = await generateJwt(loggedUser)
             return res.send(
@@ -60,7 +59,7 @@ export const login = async (req, res) => {
         return res.status(500).send({ message: 'Error to login' })
     }
 }
-//AREGLAR EL UPDATE ME DA 401 Y EN THUNDER NO ME DA LOS DATOS
+
 export const update = async (req, res) => {
     try {
         let data = req.body;

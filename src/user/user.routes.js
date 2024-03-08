@@ -1,5 +1,8 @@
 import express from 'express'
-import { test, register, login, update  } from './user.controller.js'
+import { test,
+        register,
+        login,
+        update  } from './user.controller.js'
 import { validateJwt } from '../middleware/vaidate-jwt.js'
 
 const api = express.Router()

@@ -10,7 +10,7 @@ import { config } from "dotenv"
 import userRoutes from '../src/user/user.routes.js'
 import categoryRoutes from '../src/category/category.routes.js'
 import productRoutes from '../src/product/product.routes.js'
-
+import carRoutes from '../src/shoppingcar/car.routes.js'
 
 //Configuraciones
 const app = express()
@@ -28,6 +28,7 @@ app.use(morgan('dev')) //Logs de solicitudes al servidor HTTP
 app.use(userRoutes)
 app.use('/category', categoryRoutes)
 app.use('/product', productRoutes)
+app.use('/shoppingcar', carRoutes)
 
 //Levantar el servidor
 export const initServer = ()=>{

@@ -57,9 +57,9 @@ export const checkUpdate = (data, id)=>{
             data.category ||
             data.category == '' ||
             data.product ||
-            data.product == '' ||
-            data.role ||
-            data.role == ''
+            data.product == ''
+           // data.role ||
+            //data.role == ''
         ) {
             return false
         }
