@@ -3,7 +3,8 @@ import { test,
         register,
         login,
         update,
-        deleteU  } from './user.controller.js'
+        deleteU
+          } from './user.controller.js'
 import {  validateJwt } from '../middleware/vaidate-jwt.js'
 
 const api = express.Router()
@@ -15,5 +16,6 @@ api.post('/login', login)
 //Rutas privadas (usuarios logeados)
 api.put('/update/:id', [validateJwt], update)
 api.delete('/deleteU/:id', [validateJwt], deleteU)
+//api.post('/search',[validateJwt], search)
 
 export default api

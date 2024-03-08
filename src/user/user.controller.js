@@ -99,3 +99,22 @@ export const deleteU = async (req, res)=>{
         return res.status(500).send({message: 'Error deleting account'})
     }
 }
+/*
+export const search = async(req, res)=>{
+    try{
+        //Obtener el parámetro de búsqueda
+        let { search } = req.body
+        //Buscar
+        let user = await User.find(
+            {name: search}
+        ).populate(['name', 'username', 'email', 'role'])
+        //Validar la respuesta
+        if(!user) return res.status(404).send({message: 'User not found'})
+        //Responder si todo sale bien
+        return res.send({message: 'User found', user})
+    }catch(err){
+        console.error(err)
+        return res.status(500).send({message: 'Error searching user'})
+    }
+}
+*/
